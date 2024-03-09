@@ -1,0 +1,4 @@
+[Master]
+# pylint hack, so that the 'src' directory is visible from the point of view
+# of the 'tests' directory.
+init-hook='import sys; sys.path = ["./src"] + sys.path'
